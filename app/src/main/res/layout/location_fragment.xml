@@ -1,0 +1,120 @@
+
+<FrameLayout android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    xmlns:card_view="http://schemas.android.com/tools"
+    android:id="@+id/placepickerFragment"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/mapView"
+        android:layout_width="match_parent"
+        android:layout_height="290dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="1dp"
+        card_view:cardCornerRadius="2dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <fragment xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:id="@+id/mapfragment"
+                android:name="com.google.android.gms.maps.SupportMapFragment"
+
+                android:layout_width="match_parent"
+                android:layout_height="235dp"
+                android:layout_centerHorizontal="true"
+                tools:context=".StartActivity" />
+
+
+            <Button
+                android:id="@+id/showMapView"
+                style="@style/Widget.AppCompat.Button"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/mapfragment"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentBottom="true"
+                android:layout_marginTop="-2dp"
+                android:layout_marginBottom="19dp"
+                android:onClick="showMapView"
+                android:text="CHOISIR" />
+        </RelativeLayout>
+    </android.support.v7.widget.CardView>
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="110dp"
+        android:layout_below="@+id/mapView"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="0dp"
+        android:layout_marginTop="0dp">
+
+        <RelativeLayout
+            android:id="@+id/DateScreen"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/displayDateTime"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_gravity="top"
+                android:layout_marginTop="0dp"
+                android:gravity="center"
+                android:textAlignment="center" />
+
+            <Button
+                android:id="@+id/pickdateBtn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentBottom="true"
+                android:layout_marginStart="94dp"
+                android:layout_marginBottom="0dp"
+                android:onClick="showDatePickerDialog"
+                android:text="DATE" />
+
+            <Button
+                android:id="@+id/pickTime"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+
+                android:layout_alignParentBottom="true"
+                android:layout_marginEnd="74dp"
+                android:layout_marginBottom="0dp"
+                android:onClick="showTimePicker"
+                android:text="HEURE" />
+        </RelativeLayout>
+    </android.support.v7.widget.CardView>
+
+
+    <Button
+        android:id="@+id/selectDest"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@id/DateScreen"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="0dp"
+        android:layout_marginTop="39dp"
+        android:layout_marginBottom="0dp"
+        android:background="@color/colorPrimary"
+        android:drawableRight="@drawable/quantum_ic_play_arrow_white_24"
+        android:onClick="selectDestinataires"
+        android:text="DESTINATAIRES"
+        android:textColor="@color/ColorWhite"
+        card_view:ignore="NotSibling" />
+</RelativeLayout>
+</FrameLayout>

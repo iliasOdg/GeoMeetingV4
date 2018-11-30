@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">GeoMeeting</string>
+    <string name="title_Recent">Récent</string>
+    <string name="title_Nouveau">Nouveau</string>
+    <string name="title_Historique">Historique</string>
+    <string name="permission_denied_contacts">PERMISSION REFUSEE</string>
+
+    <string name="destinataires">DESTINATAIRES</string>
+    <string name="rdv">NOUVEAU RENDEZ-VOUS</string>
+    <string name="recents">RECENTS</string>
+    <string name="historiqe">HISTORIQUE</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>

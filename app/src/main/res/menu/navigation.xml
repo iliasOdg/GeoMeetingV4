@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/navigation_recent"
+        android:icon="@drawable/notification"
+        android:title="@string/title_Recent" />
+
+    <item
+        android:id="@+id/navigation_ajouter"
+        android:icon="@drawable/new_meeting"
+        android:title="@string/title_Nouveau" />
+
+    <item
+        android:id="@+id/navigation_historique"
+        android:icon="@drawable/historique"
+        android:title="@string/title_Historique" />
+
+</menu>
